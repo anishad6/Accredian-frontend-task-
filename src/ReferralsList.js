@@ -5,7 +5,7 @@ const ReferralsList = () => {
   const [referrals, setReferrals] = useState([]);
 
   useEffect(() => {
-    axios.get("http://http://127.0.0.1:8000/crud/")
+    axios.get("https://nishadshop.pythonanywhere.com/crud/")
       .then(response => setReferrals(response.data))
       .catch(error => console.error("Error fetching referrals:", error));
   }, []);
