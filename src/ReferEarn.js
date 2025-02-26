@@ -24,7 +24,7 @@ const ReferEarn = () => {
     try {
         console.log(formData);
         
-      const response = await axios.post("http://127.0.0.1:8000/crud/", formData);
+      const response = await axios.post("https://nishadshop.pythonanywhere.com/crud/", formData);
       
 
       setMessage("Referral sent successfully!");
